@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f7f3">
+    <meta name="description" content="Turn your lived experience into a locally rooted, community-serving business offer.">
+    <title>Common Thread — Build for the place you call home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="shell topbar">
+        <a class="brand" href="#" aria-label="Common Thread home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M4 6.5h8.5a3 3 0 0 1 0 6H8.2a2.7 2.7 0 0 1 0-5.4h7.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="m13 4.5 2.5 2.6L13 9.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            Common Thread
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#philosophy">Our philosophy</a>
+            <a href="#commons">Knowledge commons</a>
+            <a class="nav-cta" href="#offer-builder">Make an offer <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shell hero">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> A community-first business builder</div>
+            <h1>Build a business that supports<br>your <em>community—and your life.</em></h1>
+            <p class="hero-copy">Your experience can help meet a need close to home. Find the useful work you can offer, test it with real people, and grow at a pace that keeps value rooted in your community.</p>
+            <a class="hero-cta" href="#offer-builder">Start with what you know <span aria-hidden="true">↓</span></a>
+            <div class="hero-values" aria-label="What this tool prioritizes">
+                <span><b aria-hidden="true">✳</b> Human skill</span>
+                <span><b aria-hidden="true">⌂</b> Local resilience</span>
+                <span><b aria-hidden="true">↗</b> Small, tested steps</span>
+            </div>
+        </section>
+
+        <section class="shell principles-strip" aria-labelledby="principles-title">
+            <div class="principles-heading">
+                <p class="section-kicker">Before we suggest a business</p>
+                <h2 id="principles-title">People and community come first.</h2>
+                <p>A business is one possible response—not the answer to every community need.</p>
+            </div>
+            <div class="principles-grid">
+                <article class="principle-item">
+                    <span class="principle-number">01</span>
+                    <div><h3>Listen before building</h3><p>Ask the people affected what they need, what already exists, and whether a small enterprise would actually help.</p></div>
+                </article>
+                <article class="principle-item">
+                    <span class="principle-number">02</span>
+                    <div><h3>Suggestions are hypotheses</h3><p>A match is a starting point—not evidence of demand, income, legal compliance, safety, or community benefit.</p></div>
+                </article>
+                <article class="principle-item">
+                    <span class="principle-number">03</span>
+                    <div><h3>Protect people and place</h3><p>Respect consent, fair pay, privacy, local rules, and your own capacity. Pause or refer work outside your competence.</p></div>
+                </article>
+                <article class="principle-item">
+                    <span class="principle-number">04</span>
+                    <div><h3>Grow only if it helps</h3><p>Choose useful, durable work over growth at all costs. Revise or stop if the work harms people or isn’t sustainable.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="shell philosophy" id="philosophy" aria-labelledby="philosophy-title">
+            <div class="philosophy-copy">
+                <p class="section-kicker">The kind of success we believe in</p>
+                <h2 id="philosophy-title">A good business leaves a place stronger.</h2>
+                <p>We’re choosing restorative business over growth at all costs: health, community, and longevity over extraction. The healthiest communities can feed, build, fix, and care for themselves.</p>
+                <p>True wealth can look like useful work, fair livelihoods, trusted relationships, and resources that stay close to home—not just a corporate exit.</p>
+                <p>That means keeping human skill in the loop and ownership within reach—not automating away relationships or concentrating the local market.</p>
+                <a class="text-link" href="#offer-builder">Find your starting point <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="philosophy-visual" aria-label="Local skills help communities care for one another">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit-center"><span>Local<br>wellbeing</span></div>
+                <div class="orbit-node node-top"><span>♧</span> Grow</div>
+                <div class="orbit-node node-right"><span>⌂</span> Build</div>
+                <div class="orbit-node node-bottom"><span>♡</span> Care</div>
+                <div class="orbit-node node-left"><span>⚒</span> Repair</div>
+                <span class="visual-caption">People, skills & resources in relationship</span>
+            </div>
+        </section>
+
+        <section class="builder-section" id="offer-builder">
+            <div class="shell builder-shell">
+                <div class="builder-intro">
+                    <p class="section-kicker">From lived experience to a first offer</p>
+                    <h2>Start small. Make something useful.</h2>
+                    <p>Three steps help you connect what you know with what neighbors need. You stay in charge of the choices.</p>
+                    <button class="sample-button" type="button" id="load-sample">Try a sample: neighborhood bike repair</button>
+                </div>
+
+                <div class="builder-card">
+                    <div class="stepper" aria-label="Offer builder steps">
+                        <div class="stepper-item is-current" data-step-indicator="1"><span>1</span><div><strong>Your hands & mind</strong><small>Skills and tools</small></div></div>
+                        <div class="stepper-line"></div>
+                        <div class="stepper-item" data-step-indicator="2"><span>2</span><div><strong>Your neighborhood</strong><small>Needs and assets</small></div></div>
+                        <div class="stepper-line"></div>
+                        <div class="stepper-item" data-step-indicator="3"><span>3</span><div><strong>Your first offer</strong><small>Blueprint and test</small></div></div>
+                    </div>
+
+                    <form id="offer-form">
+                        <section class="form-step is-active" data-step="1" aria-labelledby="step-one-title" aria-live="polite">
+                            <p class="step-count">STEP 1 OF 3 · ASSET INVENTORY</p>
+                            <h3 id="step-one-title">What can you already do well?</h3>
+                            <p class="step-description">Think of work, care, hobbies, family knowledge, and skills learned outside a job title. Begin with things you can do safely and reliably.</p>
+                            <div class="form-grid">
+                                <div class="form-field">
+                                    <label for="experience">Your lived experience <span class="optional">a few words is enough</span></label>
+                                    <textarea id="experience" name="experience" rows="3" placeholder="I’ve cared for elders, cooked for large groups, and organized neighborhood events…"></textarea>
+                                </div>
+                                <div class="form-field">
+                                    <label for="skills">Skills you can offer today</label>
+                                    <textarea id="skills" name="skills" rows="3" placeholder="Repairing, teaching, gardening, bookkeeping, cooking, listening…"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-grid compact-grid">
+                                <div class="form-field">
+                                    <label for="tools">Tools, space, or materials you already have</label>
+                                    <input id="tools" name="tools" type="text" placeholder="A sewing machine, a shared garden plot, hand tools…">
+                                </div>
+                                <div class="form-field">
+                                    <label for="tech-comfort">How comfortable are you with digital tools?</label>
+                                    <select id="tech-comfort" name="techComfort">
+                                        <option value="low">Keep it very simple</option>
+                                        <option value="some" selected>I can use basic online tools</option>
+                                        <option value="high">I’m comfortable trying new tools</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="step-actions"><span class="privacy-note">Your answers stay on this page; this demo does not send or save them.</span><button class="primary-button" type="button" data-next>Explore local needs <span aria-hidden="true">→</span></button></div>
+                        </section>
+
+                        <section class="form-step" data-step="2" aria-labelledby="step-two-title" aria-live="polite" hidden>
+                            <p class="step-count">STEP 2 OF 3 · NEIGHBORHOOD SYSTEM AUDIT</p>
+                            <h3 id="step-two-title">What’s missing nearby?</h3>
+                            <p class="step-description">Use what you’ve noticed—not assumptions. Ask neighbors, mutual-aid groups, and local organizations what is already available and what they actually need.</p>
+                            <fieldset class="needs-fieldset">
+                                <legend>Which needs do you see or hear about? <span class="optional">choose up to 3</span></legend>
+                                <div class="need-options">
+                                    <label class="need-option"><input type="checkbox" name="needs" value="repair"><span class="need-icon">⚒</span><span><strong>Repair & reuse</strong><small>Things are discarded when they could be fixed</small></span></label>
+                                    <label class="need-option"><input type="checkbox" name="needs" value="food"><span class="need-icon">♧</span><span><strong>Fresh, local food</strong><small>Access to nourishing food or growing space</small></span></label>
+                                    <label class="need-option"><input type="checkbox" name="needs" value="care"><span class="need-icon">♡</span><span><strong>Practical care</strong><small>Everyday support, connection, or companionship</small></span></label>
+                                    <label class="need-option"><input type="checkbox" name="needs" value="learning"><span class="need-icon">✳</span><span><strong>Learning together</strong><small>Hands-on skills, mentoring, or shared knowledge</small></span></label>
+                                    <label class="need-option"><input type="checkbox" name="needs" value="home"><span class="need-icon">⌂</span><span><strong>Healthy homes</strong><small>Small fixes, upkeep, or practical home skills</small></span></label>
+                                    <label class="need-option"><input type="checkbox" name="needs" value="connection"><span class="need-icon">⌘</span><span><strong>Belonging & connection</strong><small>Welcoming places and ways to meet in person</small></span></label>
+                                </div>
+                            </fieldset>
+                            <div class="form-grid compact-grid audit-fields">
+                                <div class="form-field">
+                                    <label for="local-assets">What local assets could you build with?</label>
+                                    <input id="local-assets" name="localAssets" type="text" placeholder="A library, community garden, repair shop, local growers…">
+                                </div>
+                                <div class="form-field">
+                                    <label for="radius">How far can you realistically serve?</label>
+                                    <select id="radius" name="radius">
+                                        <option value="5">About 5 miles</option>
+                                        <option value="15" selected>About 15 miles</option>
+                                        <option value="30">About 30 miles</option>
+                                        <option value="50">Up to 50 miles</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field evidence-field">
+                                <label for="need-evidence">What have people said or what have you observed? <span class="optional">specific examples help</span></label>
+                                <textarea id="need-evidence" name="needEvidence" rows="2" placeholder="A neighbor mentioned…, the nearest option is…, I noticed…"></textarea>
+                            </div>
+                            <div class="form-field evidence-status">
+                                <label for="need-status">What is the status of this evidence?</label>
+                                <select id="need-status" name="needStatus">
+                                    <option value="not-asked">I have not asked local people yet</option>
+                                    <option value="heard">I have heard this from at least one person</option>
+                                    <option value="repeated">I have heard repeated requests or seen a concrete commitment</option>
+                                </select>
+                                <small>This is your report, not independent verification. Before spending money, check existing services and talk with the people affected.</small>
+                            </div>
+                            <div class="step-actions"><button class="secondary-button" type="button" data-back>← Back</button><button class="primary-button" type="button" data-next>Build my offer <span aria-hidden="true">→</span></button></div>
+                        </section>
+
+                        <section class="form-step" data-step="3" aria-labelledby="step-three-title" aria-live="polite" hidden>
+                            <p class="step-count">STEP 3 OF 3 · OFFER PACKAGING</p>
+                            <h3 id="step-three-title">Choose a way to help people.</h3>
+                            <p class="step-description">A small, clear offer is easier to explain and test. Pick the format that best fits your skills and available resources.</p>
+                            <fieldset class="format-fieldset">
+                                <legend>How would you like to package your offer?</legend>
+                                <div class="format-options">
+                                    <label class="format-option"><input type="radio" name="format" value="service" checked><span class="format-symbol">↗</span><strong>Freelance service</strong><small>Do a useful task for a person or local group.</small></label>
+                                    <label class="format-option"><input type="radio" name="format" value="consulting"><span class="format-symbol">⌁</span><strong>1-on-1 guidance</strong><small>Help someone solve a focused problem.</small></label>
+                                    <label class="format-option"><input type="radio" name="format" value="product"><span class="format-symbol">◇</span><strong>Physical product</strong><small>Make or restore something useful nearby.</small></label>
+                                    <label class="format-option"><input type="radio" name="format" value="course"><span class="format-symbol">✳</span><strong>Hands-on class</strong><small>Teach a practical skill in a small group.</small></label>
+                                </div>
+                            </fieldset>
+                            <div class="step-actions"><button class="secondary-button" type="button" data-back>← Back</button><button class="primary-button" type="submit">Generate my community offer <span aria-hidden="true">↗</span></button></div>
+                        </section>
+                    </form>
+                    <p class="form-error" id="form-error" role="alert" hidden></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shell blueprint-section" id="blueprint" aria-labelledby="blueprint-title" aria-live="polite" hidden>
+            <div class="blueprint-heading">
+                <div><p class="section-kicker">Your experience-to-business map</p><h2 id="blueprint-title">A first offer, rooted close to home.</h2></div>
+                <div class="blueprint-actions"><button class="secondary-button" type="button" id="start-over">Start a new idea</button><button class="print-button" type="button" id="print-plan">Print / save plan</button></div>
+            </div>
+            <div class="mapping-table">
+                <div class="mapping-head"><span>Your life experience & skills</span><span>The community need</span><span>A healthy business blueprint</span></div>
+                <div class="mapping-row">
+                    <div><span class="mapping-mobile-label">Your life experience & skills</span><strong id="map-experience"></strong><p id="map-skills"></p><p id="map-tools"></p></div>
+                    <div><span class="mapping-mobile-label">The community need</span><strong id="map-need"></strong><p id="map-evidence"></p></div>
+                    <div><span class="mapping-mobile-label">A healthy business blueprint</span><strong id="map-business"></strong><p id="map-format"></p></div>
+                </div>
+            </div>
+
+            <div class="health-card">
+                <div class="health-title"><span class="health-icon">✳</span><div><p class="section-kicker">Community health filter</p><h3>Four commitments before an idea makes the list.</h3></div></div>
+                <p class="health-intro">These are design gates, not badges. This concept is only a fit if you can verify all four locally; if any condition fails, adapt the offer or choose another. A blueprint is not proof of demand, profitability, or impact.</p>
+                <div class="health-checks" id="health-checks"></div>
+                <p class="radius-note" id="radius-note"></p>
+            </div>
+
+            <div class="offer-grid">
+                <article class="offer-card main-offer">
+                    <p class="section-kicker">Your offer · first draft</p>
+                    <h3 id="offer-name"></h3>
+                    <p id="offer-description"></p>
+                    <div class="offer-sentence" id="offer-sentence"></div>
+                    <div class="offer-parts">
+                        <div><span>WHO IT HELPS</span><strong id="offer-who"></strong></div>
+                        <div><span>WHAT YOU DO</span><strong id="offer-do"></strong></div>
+                        <div><span>HOW TO START</span><strong id="offer-start"></strong></div>
+                    </div>
+                    <p class="caution-note"><strong>Keep it honest:</strong> Start with a skill you can safely deliver. Check local permits, insurance, food-safety rules, accessibility needs, and any professional requirements before taking paid work.</p>
+                </article>
+                <article class="offer-card validation-card">
+                    <p class="section-kicker">Micro-validation hub</p>
+                    <h3>A no-cost path to your first 3 clients</h3>
+                    <p>Listen first. Ask for a small paid pilot only when there’s a real fit. No ad spend, debt, or pressure tactics required.</p>
+                    <ol class="validation-list" id="validation-list"></ol>
+                    <div class="measure-box"><strong>Healthy signal to look for</strong><span>People understand the offer, agree it helps, and willingly take a concrete next step. Interest is not a guarantee of repeat demand.</span></div>
+                </article>
+            </div>
+
+            <article class="tech-card">
+                <div><p class="section-kicker">Your light tech stack</p><h3>Use the least tech that gets the job done.</h3><p id="tech-guidance"></p></div>
+                <ul id="tech-list"></ul>
+            </article>
+
+            <article class="economics-card">
+                <div>
+                    <p class="section-kicker">A quick sustainability check</p>
+                    <h3>Would one sale make sense for you?</h3>
+                    <p>Estimate one delivery. This rough contribution estimate is before taxes, overhead, unpaid admin, and your full income needs—not a profit forecast.</p>
+                </div>
+                <div class="economics-inputs">
+                    <label>Price per sale <span><span class="currency-symbol">$</span><input id="sale-price" type="number" min="0" step="0.01" value="50" inputmode="decimal"></span></label>
+                    <label>Direct costs per sale <span><span class="currency-symbol">$</span><input id="sale-cost" type="number" min="0" step="0.01" value="10" inputmode="decimal"></span></label>
+                    <label>Hours per sale <span><input id="sale-hours" type="number" min="0.1" step="0.1" value="2" inputmode="decimal"><span class="unit-suffix">hrs</span></span></label>
+                    <p id="economics-result" class="economics-result" aria-live="polite">Estimated contribution: $40.00 per sale, or $20.00 per delivery hour before overhead and taxes.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="shell commons-section" id="commons">
+            <div class="commons-heading">
+                <div><p class="section-kicker">Knowledge commons & practical starting points</p><h2>Useful knowledge should travel freely.</h2></div>
+                <p>These resources offer different kinds of help: a localization perspective, practical business support, cooperative guidance, and legal or tax starting points.</p>
+            </div>
+            <div class="commons-grid">
+                <article class="commons-card"><span class="commons-icon">⌂</span><p class="resource-type">LOCALIZATION · PERSPECTIVE</p><h3>Local Futures</h3><p>Its work advocates rebuilding local economies and cultures. The organization describes itself as a U.S. 501(c)(3) nonprofit, names its legal entity and board oversight, and outlines funding sources. Treat its economic analysis as a stated advocacy perspective; compare claims with local evidence and other sources.</p><a href="https://www.localfutures.org/about-local-futures/" target="_blank" rel="noopener noreferrer">About Local Futures <span aria-hidden="true">↗</span></a><a href="https://www.localfutures.org/publications/" target="_blank" rel="noopener noreferrer">Browse films, reports & publications <span aria-hidden="true">↗</span></a><a href="https://apps.irs.gov/app/eos/" target="_blank" rel="noopener noreferrer">Check U.S. tax-exempt filings with IRS <span aria-hidden="true">↗</span></a><small class="resource-caveat">We have not independently audited its finances or confirmed its current IRS record.</small></article>
+                <article class="commons-card"><span class="commons-icon">⚒</span><p class="resource-type">REPAIR · REUSE</p><h3>Community repair circle</h3><p>Explore the Repair Café model for repairing everyday items together. Check local safety, insurance, and venue requirements before hosting.</p><a href="https://www.repaircafe.org/en/" target="_blank" rel="noopener noreferrer">Explore Repair Café knowledge <span aria-hidden="true">↗</span></a></article>
+                <article class="commons-card"><span class="commons-icon">♧</span><p class="resource-type">GROW · SHARE</p><h3>Growing together</h3><p>Learn about community gardens, seed sharing, and growing food with neighbors. Adapt planting choices to local climate and food-safety guidance.</p><a href="https://www.communitygarden.org/" target="_blank" rel="noopener noreferrer">Explore community garden resources <span aria-hidden="true">↗</span></a></article>
+                <article class="commons-card"><span class="commons-icon">↗</span><p class="resource-type">START SMALL · PLAN</p><h3>Lean business planning</h3><p>The U.S. Small Business Administration explains lean and traditional plans. Use a one-page plan to test assumptions before committing substantial time or money.</p><a href="https://www.sba.gov/counseling/plan-your-business/" target="_blank" rel="noopener noreferrer">SBA business planning guide <span aria-hidden="true">↗</span></a></article>
+                <article class="commons-card"><span class="commons-icon">⌘</span><p class="resource-type">LOCAL SUPPORT · MENTORING</p><h3>Talk with a business adviser</h3><p>Find SBA network partners such as Small Business Development Centers, SCORE, and Women’s Business Centers. Availability and eligibility vary by location.</p><a href="https://www.sba.gov/counseling/local-assistance/" target="_blank" rel="noopener noreferrer">Find U.S. local business assistance <span aria-hidden="true">↗</span></a></article>
+                <article class="commons-card"><span class="commons-icon">§</span><p class="resource-type">U.S. LEGAL · TAX BASICS</p><h3>Choose a structure & check rules</h3><p>Compare U.S. business structures, registration, permits, and tax basics. Requirements depend on your state, county, city, activity, and personal circumstances.</p><a href="https://www.sba.gov/counseling/launch-your-business/" target="_blank" rel="noopener noreferrer">SBA launch & structure guide <span aria-hidden="true">↗</span></a><a href="https://www.sba.gov/counseling/launch-your-business/#licenses-permits" target="_blank" rel="noopener noreferrer">Licenses & permits <span aria-hidden="true">↗</span></a></article>
+                <article class="commons-card"><span class="commons-icon">$</span><p class="resource-type">U.S. TAX · OFFICIAL SOURCE</p><h3>IRS small-business tax center</h3><p>Start with the IRS for federal tax responsibilities. Its EIN application is free; beware of third-party sites charging to obtain one.</p><a href="https://www.irs.gov/businesses/small-businesses-self-employed" target="_blank" rel="noopener noreferrer">Visit IRS small-business tax center <span aria-hidden="true">↗</span></a><a href="https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number" target="_blank" rel="noopener noreferrer">Apply for an EIN directly with IRS <span aria-hidden="true">↗</span></a></article>
+                <article class="commons-card"><span class="commons-icon">♡</span><p class="resource-type">LEGAL HELP · U.S. DIRECTORY</p><h3>Find local legal information</h3><p>LawHelp connects people with nonprofit legal-aid and information resources by location. Ask providers whether small-business advice is in scope; legal aid may have eligibility limits.</p><a href="https://www.lawhelp.org/" target="_blank" rel="noopener noreferrer">Find legal help by location <span aria-hidden="true">↗</span></a></article>
+                <article class="commons-card"><span class="commons-icon">⌂</span><p class="resource-type">COOPERATIVE · SHARED OWNERSHIP</p><h3>Explore worker cooperatives</h3><p>Learn about democratic worker ownership and cooperative development. Cooperative statutes and available entity forms vary by jurisdiction.</p><a href="https://www.usworker.coop/resources/" target="_blank" rel="noopener noreferrer">U.S. Federation of Worker Cooperatives resources <span aria-hidden="true">↗</span></a><a href="https://www.co-oplaw.org/" target="_blank" rel="noopener noreferrer">Co-op legal resources from SELC <span aria-hidden="true">↗</span></a></article>
+            </div>
+            <p class="commons-note">Resource scope: U.S. government, tax, and legal links are U.S.-specific; people elsewhere should consult their local official small-business, tax, and legal-aid services. Links are for learning, not endorsements or legal, tax, or financial advice. Check current rules and suitability with a qualified local adviser before acting. Last reviewed October 2026.</p>
+        </section>
+
+        <section class="shell closing-note">
+            <span class="closing-mark" aria-hidden="true">✳</span>
+            <div><h2>Keep the value close.</h2><p>Pay fairly. Buy locally when you can. Share skills. Collaborate before competing. Grow only as fast as your people, place, and livelihood can sustain.</p></div>
+        </section>
+    </main>
+
+    <footer class="shell footer">
+        <span><strong>Common Thread</strong> — Useful work. Shared prosperity. Stronger places.</span>
+        <a href="#philosophy">The community-first promise ↑</a>
+    </footer>
+
+    <script>
+        const ideaCatalog = [
+            {
+                id: "repair",
+                name: "Neighborhood repair & reuse service",
+                title: "Repair & reuse",
+                description: "Help neighbors extend the life of everyday items through a focused repair service, a small repair circle, or practical repair lessons.",
+                offer: "A small, scheduled repair session for one kind of item you know how to fix safely.",
+                fit: ["repair", "home", "connection"],
+                skills: ["repair", "fix", "mend", "sew", "wood", "tool", "build", "craft", "bike", "mechanic", "maintain"],
+                from: "Your practical know-how, repair experience, or care for useful things.",
+                why: "Good items may be discarded because repair skills, time, or an affordable local option are hard to find.",
+                local: "Serve locally and source essential parts or reclaimed materials within 50 miles where possible. Disclose any gap and redesign before calling this locally rooted.",
+                resilient: "Start with tools you own, appointment-only work, and one repair type. Avoid a lease, inventory debt, or work beyond your safe ability.",
+                regen: "Extend product life, share repair knowledge, and keep usable goods circulating locally.",
+                do: "Inspect and repair only items within your training; explain what cannot be safely fixed.",
+                who: "Neighbors, community groups, or small local organizations who need a reliable repair option.",
+                steps: ["Talk with 5 neighbors about one item they have given up on fixing; learn what they currently do and what a safe repair is worth to them.", "Show a clear scope and price to interested neighbors; invite paid bookings before buying extra tools or stock.", "Deliver the first small bookings safely, track time and materials, and ask satisfied customers for introductions. If 3 people do not commit, refine the offer before investing."],
+                digital: ["A free email account for enquiries", "A one-page document or printable service list", "A simple calendar or paper appointment book"]
+            },
+            {
+                id: "food",
+                name: "Neighborhood growing & food-skills service",
+                title: "Local food & growing",
+                description: "Use growing or food knowledge to support seedlings, garden setup, shared growing days, or practical food-skills sessions.",
+                offer: "A small, seasonal growing session or seedling starter tailored to the space people have.",
+                fit: ["food", "connection", "learning"],
+                skills: ["garden", "grow", "plant", "farm", "food", "cook", "seed", "compost", "preserv", "land"],
+                from: "Your experience growing, cooking, teaching, organizing, or caring for shared spaces.",
+                why: "Neighbors may want fresh food or growing skills but lack access to space, starter plants, or practical guidance.",
+                local: "Use locally grown food, seeds, compost, and shared growing spaces within 50 miles; verify seasonal availability before offering.",
+                resilient: "Start with pre-orders or a borrowed/shared space and a small seasonal pilot; avoid taking on land leases or large stock costs too early.",
+                regen: "Build food-growing knowledge, support local food resilience, and improve soil and biodiversity where appropriate.",
+                do: "Offer a short workshop, a small seedling batch, or a garden-planning visit based on your local conditions.",
+                who: "Neighbors, schools, community gardens, or groups curious about growing more food locally.",
+                steps: ["Ask 5 nearby households or a community garden what they want to grow, what space they have, and how they currently get seedlings or advice.", "Offer a clearly scoped, priced small session or seedling batch; invite pre-orders before buying materials.", "Deliver a small first batch, track costs and time, and ask for introductions. If 3 people do not commit, revise the offer before scaling."],
+                digital: ["A free email account or community noticeboard", "A shared document for a simple planting plan", "A paper sign-up sheet and calendar"]
+            },
+            {
+                id: "care",
+                name: "Neighbor practical-support service",
+                title: "Practical care & connection",
+                description: "Offer a clearly bounded, non-clinical practical support service that helps people feel connected and manage everyday tasks.",
+                offer: "A scheduled, practical support visit or small-group activity with clear boundaries and referral contacts.",
+                fit: ["care", "connection", "home"],
+                skills: ["care", "listen", "elder", "organ", "support", "help", "people", "community", "coordinate", "companion"],
+                from: "Your experience listening, coordinating, supporting people, or building trusting relationships.",
+                why: "People can become isolated or struggle to find small, trustworthy forms of everyday help and connection.",
+                local: "Work with nearby residents and local support organizations within 50 miles; verify the referral network and service area.",
+                resilient: "Begin with a defined service, limited appointments, and existing community venues. Keep costs low and protect time for rest.",
+                regen: "Strengthen relationships and connect people with local support instead of replacing public or specialist care.",
+                do: "Provide one defined practical task or social activity; never present it as medical, legal, or specialist care unless qualified.",
+                who: "Adults who want practical everyday support, and local groups seeking an additional community connection.",
+                steps: ["Speak with 5 residents and one trusted community organization about a specific unmet support need and existing services.", "Define safe boundaries, accessibility, referrals, and a clear price; invite a small paid pilot only when the work is appropriate and qualified.", "Follow up with participants and trusted referrals. Seek 3 willing bookings; if demand or safeguards are unclear, pause and redesign."],
+                digital: ["A private email account for enquiries", "A paper or basic calendar for appointments", "A printed one-page description with boundaries and referral contacts"]
+            },
+            {
+                id: "learning",
+                name: "Hands-on neighborhood skill-share",
+                title: "Practical learning",
+                description: "Turn a skill you can teach safely into a small-group lesson, mentoring session, or hands-on community workshop.",
+                offer: "A one-hour beginner-friendly workshop where participants leave having practiced one useful skill.",
+                fit: ["learning", "connection", "repair", "food"],
+                skills: ["teach", "train", "mentor", "explain", "coach", "workshop", "learn", "demonstrat", "lesson", "organ"],
+                from: "Your experience teaching, demonstrating, mentoring, or explaining a practical skill.",
+                why: "People may have few affordable, welcoming ways to learn practical skills together in person.",
+                local: "Use a nearby library, school, community center, or maker space and serve participants within 50 miles.",
+                resilient: "Pre-register a small group in a borrowed space; teach what you already know before buying equipment.",
+                regen: "Share skills peer-to-peer, strengthen local capability, and create human connection across generations.",
+                do: "Teach one beginner-safe, achievable outcome and make space for questions and practice.",
+                who: "Neighbors, local clubs, schools, or community organizations who want practical, welcoming learning.",
+                steps: ["Ask 5 people which specific skill they want to learn, what they have tried, and what time or location works.", "Share the class outcome, length, price, and borrowed venue; invite paid reservations before buying materials.", "Teach the first small class, ask for honest feedback and introductions, and work toward 3 paid seats before adding dates."],
+                digital: ["A free email account for sign-ups", "A printable one-page lesson outline", "A paper sign-in sheet and feedback cards"]
+            },
+            {
+                id: "home",
+                name: "Small home-upkeep & access service",
+                title: "Healthy homes & upkeep",
+                description: "Help with small, non-specialist home tasks that make everyday spaces more usable, comfortable, or easier to maintain.",
+                offer: "A fixed-length home-upkeep visit for a specific list of safe, non-licensed tasks.",
+                fit: ["home", "repair", "care"],
+                skills: ["home", "repair", "build", "organ", "clean", "access", "maintain", "paint", "carpentry", "practical"],
+                from: "Your experience fixing, organizing, maintaining, or making spaces easier to use.",
+                why: "Small upkeep needs can accumulate when people cannot find an affordable, trusted local person for simple tasks.",
+                local: "Serve a compact area, use materials and qualified tradespeople from within 50 miles, and disclose any exception.",
+                resilient: "Offer a short, pre-scoped visit using tools you own; avoid taking on unlicensed, unsafe, or capital-intensive work.",
+                regen: "Maintain existing homes, reduce avoidable waste, and connect residents with trusted local trades when needed.",
+                do: "Complete only clearly agreed, low-risk tasks within your competence and legal scope.",
+                who: "Residents, tenants, older adults, or local housing groups needing small, non-specialist upkeep.",
+                steps: ["Ask 5 residents or a housing group which small home tasks are hardest to get done and who they ask today.", "Define safe, non-licensed tasks, the boundary for qualified trades, and a clear price; invite bookings before buying tools.", "Deliver a small first visit, ask for referrals, and aim for 3 confirmed bookings. Pause if licensing, insurance, or safety is unclear."],
+                digital: ["A free email account and phone number", "A simple paper estimate and task checklist", "A calendar for booking and follow-up"]
+            },
+            {
+                id: "connection",
+                name: "Local gathering & community-hosting service",
+                title: "Belonging & local connection",
+                description: "Help a local group host welcoming, small-scale gatherings around shared food, practical skills, or neighborhood life.",
+                offer: "A simple hosted gathering with a clear purpose, accessible location, and a shared activity.",
+                fit: ["connection", "learning", "food", "care"],
+                skills: ["event", "host", "organ", "community", "connect", "facilitat", "welcome", "people", "coordinate", "food"],
+                from: "Your experience welcoming people, planning gatherings, cooking, or bringing groups together.",
+                why: "People may want low-pressure ways to meet, share skills, and feel part of neighborhood life.",
+                local: "Use existing venues, food, and partners within 50 miles; verify access and local sourcing before booking.",
+                resilient: "Begin with a borrowed venue and shared supplies; confirm interest before spending on food or materials.",
+                regen: "Build trust, shared knowledge, and relationships that make local mutual support easier.",
+                do: "Coordinate a small gathering with clear roles, accessibility, and participant-led activities.",
+                who: "Residents, local associations, community groups, or organizations seeking inclusive gatherings.",
+                steps: ["Ask 5 residents or a community group what gathering they would attend and what makes it welcoming.", "Agree on venue access, costs, roles, and a clear offer with an existing partner; seek paid reservations or a confirmed host before spending.", "Host a small gathering, invite feedback and introductions, and work toward 3 confirmed bookings before adding events."],
+                digital: ["A free email account or community noticeboard", "A printable invitation and event checklist", "A simple paper attendance and feedback sheet"]
+            }
+        ];
+
+        const offerForm = document.querySelector("#offer-form");
+        const formError = document.querySelector("#form-error");
+        const blueprint = document.querySelector("#blueprint");
+        let currentStep = 1;
+
+        function setStep(step) {
+            currentStep = step;
+            document.querySelectorAll(".form-step").forEach((panel) => {
+                const active = Number(panel.dataset.step) === step;
+                panel.hidden = !active;
+                panel.classList.toggle("is-active", active);
+                if (active) panel.querySelector("h3")?.setAttribute("tabindex", "-1");
+            });
+            document.querySelectorAll("[data-step-indicator]").forEach((indicator) => {
+                const number = Number(indicator.dataset.stepIndicator);
+                indicator.classList.toggle("is-current", number === step);
+                indicator.classList.toggle("is-complete", number < step);
+                if (number === step) indicator.setAttribute("aria-current", "step");
+                else indicator.removeAttribute("aria-current");
+            });
+            formError.hidden = true;
+            document.querySelector(`.form-step[data-step="${step}"] h3`)?.focus();
+        }
+
+        function nextStep() {
+            if (currentStep === 1) {
+                const experience = document.querySelector("#experience");
+                const skills = document.querySelector("#skills");
+                if (!experience.value.trim() || !skills.value.trim()) {
+                    formError.textContent = "Add a little about your experience and at least one skill to continue.";
+                    formError.hidden = false;
+                    (!experience.value.trim() ? experience : skills).focus();
+                    return;
+                }
+            }
+            if (currentStep === 2 && !document.querySelector('input[name="needs"]:checked')) {
+                formError.textContent = "Choose at least one need you have observed or heard about.";
+                formError.hidden = false;
+                document.querySelector('input[name="needs"]').focus();
+                return;
+            }
+            if (currentStep < 3) setStep(currentStep + 1);
+        }
+
+        document.querySelectorAll("[data-next]").forEach((button) => button.addEventListener("click", nextStep));
+        document.querySelectorAll("[data-back]").forEach((button) => button.addEventListener("click", () => setStep(currentStep - 1)));
+
+        document.querySelectorAll('input[name="needs"]').forEach((checkbox) => {
+            checkbox.addEventListener("change", () => {
+                const selected = [...document.querySelectorAll('input[name="needs"]:checked')];
+                if (selected.length > 3) {
+                    checkbox.checked = false;
+                    formError.textContent = "Choose up to three needs so you can focus your first test.";
+                    formError.hidden = false;
+                } else {
+                    formError.hidden = true;
+                }
+            });
+        });
+
+        function makeOffer(event) {
+            event.preventDefault();
+            const formData = new FormData(offerForm);
+            const experience = formData.get("experience").trim();
+            const skills = formData.get("skills").trim();
+            const assets = `${experience} ${skills} ${formData.get("tools") || ""} ${formData.get("localAssets") || ""}`.toLowerCase();
+            const needs = formData.getAll("needs");
+            const format = formData.get("format");
+            const comfort = formData.get("techComfort");
+            const radius = Number(formData.get("radius"));
+            const candidates = ideaCatalog.filter((idea) => idea.fit.some((need) => needs.includes(need)));
+            const ranked = candidates.map((idea) => ({
+                idea,
+                matches: idea.skills.filter((keyword) => {
+                    const pattern = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:s|es|ed|ing)?\\b`, "i");
+                    return pattern.test(assets);
+                }),
+                score: idea.skills.filter((keyword) => {
+                    const pattern = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:s|es|ed|ing)?\\b`, "i");
+                    return pattern.test(assets);
+                }).length
+            })).sort((a, b) => b.score - a.score);
+            const bestMatch = ranked[0];
+
+            if (!bestMatch || bestMatch.score === 0) {
+                blueprint.hidden = true;
+                formError.textContent = "There isn’t enough overlap between the skills you entered and this need for a useful suggestion yet. Try more specific examples of work you can reliably do, or choose a need that better fits your experience.";
+                formError.hidden = false;
+                return;
+            }
+            const selected = bestMatch.idea;
+            const matchedSkills = bestMatch.matches;
+
+            const selectedNeedNames = needs.map((need) => ({
+                repair: "repair & reuse",
+                food: "fresh, local food",
+                care: "practical care",
+                learning: "hands-on learning",
+                home: "healthy homes",
+                connection: "belonging & connection"
+            })[need]);
+            const formatNames = {
+                service: "A small, clearly scoped freelance service",
+                consulting: "A focused 1-on-1 guidance session",
+                product: "A small-batch physical product",
+                course: "A beginner-friendly hands-on class"
+            };
+            document.querySelector("#map-experience").textContent = `${experience} Skills: ${skills}`;
+            document.querySelector("#map-skills").textContent = matchedSkills.length
+                ? `Possible strengths to package: ${matchedSkills.join(", ")}. Check these against what you can reliably demonstrate.`
+                : "No direct skill match found in your wording yet. Revisit your skills and tools before treating this as a fit.";
+            document.querySelector("#map-tools").textContent = `Starting assets: ${formData.get("tools").trim() || "Use existing skills; borrow or share tools before buying."}`;
+            document.querySelector("#map-need").textContent = selectedNeedNames.join(", ");
+            const evidenceStatus = {
+                "not-asked": "Not yet checked with local people",
+                heard: "You report hearing this from at least one person",
+                repeated: "You report repeated requests or a concrete commitment"
+            }[formData.get("needStatus")];
+            document.querySelector("#map-evidence").textContent = `${evidenceStatus}. ${formData.get("needEvidence").trim() || "No evidence notes yet. Speak with neighbors and local groups before investing."}`;
+            document.querySelector("#map-business").textContent = selected.name;
+            document.querySelector("#map-format").textContent = formatNames[format];
+            document.querySelector("#offer-name").textContent = selected.name;
+            document.querySelector("#offer-description").textContent = selected.description;
+            const packagedOffers = {
+                service: `I offer ${selected.offer.replace(/[.!?]+$/, "").replace(/^./, (character) => character.toLowerCase())} for ${selected.who.replace(/[.!?]+$/, "").toLowerCase()}.`,
+                consulting: `I offer a focused 1-on-1 planning session to help someone take a practical next step with ${selected.title.toLowerCase()}.`,
+                product: `I make a small-batch ${selected.title.toLowerCase()} kit or restored item using local or reclaimed materials where practical.`,
+                course: `I teach a beginner-friendly, hands-on class in ${selected.title.toLowerCase()}, with time to practice and ask questions.`
+            };
+            document.querySelector("#offer-sentence").textContent = packagedOffers[format];
+            document.querySelector("#offer-who").textContent = selected.who;
+            document.querySelector("#offer-do").textContent = selected.do;
+            document.querySelector("#offer-start").textContent = selected.resilient;
+            document.querySelector("#radius-note").textContent = `Your selected service radius: about ${radius} miles (maximum 50). Confirm essential resources and partners are local before launch; disclose any gap and redesign rather than claiming localization. Keep the first test small and expand only if local people confirm the value.`;
+            document.querySelector("#validation-list").replaceChildren(...selected.steps.map((step) => {
+                const item = document.createElement("li");
+                item.textContent = step;
+                return item;
+            }));
+
+            const checks = [
+                ["Human-centric", "♡", "Design intention: center human skill, judgement, teaching, or relationships; use digital tools to support—not replace—people."],
+                ["Locally rooted", "⌂", `${selected.local} Verify suppliers, partners, and distance; this site cannot confirm them.`],
+                ["Low-overhead & resilient", "◇", `${selected.resilient} Avoid predatory debt; do not take on costs you cannot safely carry. Estimate your costs below.`],
+                ["Regenerative", "♧", `${selected.regen} Intended benefit only; ask affected people and check for unintended harms.`]
+            ];
+            document.querySelector("#health-checks").replaceChildren(...checks.map(([title, icon, text]) => {
+                const item = document.createElement("div");
+                item.className = "health-check";
+                const mark = document.createElement("span");
+                mark.className = "check-mark";
+                mark.setAttribute("aria-hidden", "true");
+                mark.textContent = icon;
+                const copy = document.createElement("span");
+                const strong = document.createElement("strong");
+                strong.textContent = title;
+                const description = document.createElement("small");
+                description.textContent = text;
+                copy.append(strong, description);
+                item.append(mark, copy);
+                return item;
+            }));
+
+            const techGuidance = {
+                low: "Keep the workflow human and simple. Start with paper and a phone; add a digital tool only when it removes a real friction point.",
+                some: "Use a few familiar, free tools for communication and coordination. Skip paid platforms until a tested offer needs them.",
+                high: "You can try lightweight digital tools, but keep the service human-led, protect customer data, and avoid building software before validating demand."
+            };
+            const techTools = {
+                low: ["Phone calls or text messages for conversations", "Paper notebook for contacts, costs, and bookings", "Printed one-page offer to share in person"],
+                some: ["Free email account for enquiries", "Free document or spreadsheet for bookings and costs", "Community noticeboard or existing local group for outreach"],
+                high: ["Free form tool for opt-in interest", "Free spreadsheet for costs, bookings, and learning", "Simple one-page site or community listing—no tracking-heavy ad stack"]
+            };
+            document.querySelector("#tech-guidance").textContent = techGuidance[comfort];
+            document.querySelector("#tech-list").replaceChildren(...techTools[comfort].map((tool) => {
+                const item = document.createElement("li");
+                item.textContent = tool;
+                return item;
+            }));
+
+            blueprint.hidden = false;
+            blueprint.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        offerForm.addEventListener("submit", makeOffer);
+        document.querySelector("#print-plan").addEventListener("click", () => window.print());
+        document.querySelector("#start-over").addEventListener("click", () => {
+            offerForm.reset();
+            document.querySelectorAll('input[name="needs"]').forEach((input) => { input.checked = false; });
+            document.querySelectorAll(".format-option").forEach((option) => option.classList.remove("is-selected"));
+            document.querySelector(".format-option").classList.add("is-selected");
+            blueprint.hidden = true;
+            setStep(1);
+            offerForm.querySelector("#experience").focus();
+            document.querySelector("#offer-builder").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+
+        document.querySelector("#load-sample").addEventListener("click", () => {
+            offerForm.reset();
+            document.querySelector("#experience").value = "I have repaired bicycles for neighbors and helped people learn basic maintenance.";
+            document.querySelector("#skills").value = "Bicycle repair, diagnosing common faults, explaining practical steps, and organizing a shared tool kit.";
+            document.querySelector("#tools").value = "Basic bike tools and access to a shared garage.";
+            document.querySelector("#tech-comfort").value = "low";
+            document.querySelector("#local-assets").value = "A nearby community workshop and neighborhood noticeboard.";
+            document.querySelector("#need-evidence").value = "A few neighbors mentioned they travel across town for small bicycle repairs.";
+            document.querySelector("#need-status").value = "heard";
+            document.querySelector("#radius").value = "5";
+            document.querySelector('input[name="needs"][value="repair"]').checked = true;
+            document.querySelector('input[name="format"][value="service"]').checked = true;
+            document.querySelectorAll(".format-option").forEach((option) => option.classList.toggle("is-selected", option.querySelector("input").checked));
+            blueprint.hidden = true;
+            setStep(3);
+            document.querySelector("#offer-form").requestSubmit();
+        });
+
+        function updateEconomics() {
+            const rawValues = ["#sale-price", "#sale-cost", "#sale-hours"].map((selector) => document.querySelector(selector).value);
+            const [price, cost, hours] = rawValues.map(Number);
+            const output = document.querySelector("#economics-result");
+            if (rawValues.some((value) => value.trim() === "") || ![price, cost, hours].every(Number.isFinite) || price < 0 || cost < 0 || hours <= 0) {
+                output.textContent = "Enter non-negative price and cost values, plus a delivery time greater than zero.";
+                output.classList.add("has-error");
+                return;
+            }
+            const contribution = price - cost;
+            const hourly = contribution / hours;
+            const currency = new Intl.NumberFormat(undefined, { style: "currency", currency: "USD" });
+            output.classList.toggle("has-warning", contribution < 0 || hourly < 0);
+            output.classList.remove("has-error");
+            output.textContent = `Estimated contribution: ${currency.format(contribution)} per sale, or ${currency.format(hourly)} per delivery hour before overhead and taxes.`;
+        }
+
+        ["#sale-price", "#sale-cost", "#sale-hours"].forEach((selector) => {
+            document.querySelector(selector).addEventListener("input", updateEconomics);
+        });
+
+        document.querySelectorAll('input[name="format"]').forEach((radio) => {
+            radio.addEventListener("change", () => {
+                document.querySelectorAll(".format-option").forEach((option) => option.classList.toggle("is-selected", option.querySelector("input").checked));
+            });
+        });
+        document.querySelector(".format-option").classList.add("is-selected");
+    </script>
+</body>
+</html>
